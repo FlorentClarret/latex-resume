@@ -2,6 +2,6 @@
 *.aux
 *.bcf
 *.log
-*.pdf
+cv.pdf
 *.xml
 *.gz
