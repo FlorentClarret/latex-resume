@@ -16,6 +16,7 @@
 \usepackage{dtklogos}
 \usepackage[utf8]{inputenc}
 \usepackage{tikz}
+\usepackage{enumitem}
 \usetikzlibrary{mindmap,shadows}
 \hypersetup{
     pdftitle={Florent Clarret - CV},
@@ -52,8 +53,7 @@
 
 \begin{document}
 
-\header{Florent}{ Clarret}
-      {Ingénieur étude et développement}
+\header{Florent}{ Clarret} {Ingénieur étude et développement}{10 Rue des barattières}{37130, Cinq-Mars-La-Pile}{France}
       
 % Fake text to add separator      
 \fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
@@ -61,15 +61,9 @@
 }}
 
 
-
 % In the aside, each new line forces a line break
 \begin{aside}
-  \includegraphics[scale=0.18]{img/photo.png}
-  \section{Adresse}
-    10 Rue des barattières
-    37130, Cinq-Mars-La-Pile
-    France
-    ~
+  \includegraphics[scale=0.2]{img/photo.png}
 \section{Infos}
     Né le 01/04/1992
     Nationalité française
@@ -77,15 +71,14 @@
     ~
   \section{Contact}
    +33 (0)6 62 97 01 69
-    \href{mailto:florent.clarret@gmail.com}{\textbf{florent.clarret@}\\gmail.com}
+    \href{mailto:florent.clarret@gmail.com}{\textbf{florent.clarret@}gmail.com}
     ~
   \section{Web}
 	    \href{https://www.linkedin.com/in/florent-clarret/}{florent-clarret} \includegraphics{img/linkedin.png} 
 	    \href{https://github.com/FlorentClarret}{FlorentClarret} \includegraphics{img/github.png} 
     ~
   \section{Langues}
-	Français
-    Anglais
+    Anglais (TOEIC 960)
     ~
   \section{Développement}
     \smartdiagram[bubble diagram]{
@@ -113,6 +106,12 @@
         \textbf{JMH}
     }
     ~
+   \section{Side projects}
+    \textit{\#Homelab}
+    \textit{\#DIY}
+    \textit{\#HomeServer}
+    \textit{\#HomeAutomation}
+    ~
 \end{aside}
 ~
 \\
@@ -121,34 +120,61 @@
 \begin{entrylist}
       \vspace{7pt}    
   \entry
-    {Depuis 05/18}
+    {Depuis 2018}
     {Ingénieur étude et développement Java}
     {Worldline, Tours}
-    {Refonte technique et évolution fonctionnelle du Back-End d'une solution d'authentificiation forte des personnes. Ajout de moyens alternatifs d'authentification par fingerprint ou le protocole FIDO en plus de l'utilisation du PIN. Mise en place d'une nouvelle API permettant une communication client/serveur plus efficace et sécurisée. Optimisation  du Back-End afin de pouvoir traiter toujours plus d'authentifications et toujours plus rapidement. Passage de Spring 3 vers Spring Boot 2, le tout s'appuyant sur une base de données de type MySQL. \\Dockerisation de l'application pour faciliter la mise en place des tests d'intégration.}
+    {
+    \vspace{-0.8\baselineskip}
+	\begin{itemize}[leftmargin=*]
+		\item Refonte technique et évolution fonctionnelle du Back-End d'une solution d'authentificiation forte des personnes.
+		\item Ajout de moyens alternatifs d'authentification par fingerprint ou le protocole FIDO en plus de l'utilisation du PIN. 
+		\item Mise en place d'une nouvelle API permettant une communication client/serveur plus efficace et sécurisée.
+		\item Dockerisation de l'application pour faciliter la mise en place des tests d'intégration.
+	\end{itemize}	    
+	}
       \vspace{7pt}    
   \entry
-    {Depuis 09/17}
-    {Enseignant}
+    {Depuis 2017}
+    {Chargé d'enseignement}
     {Polytech Tours}
-    {Dispense de cours pour les étudiants de dernière année du cursus d'ingénieur portant sur le développement en Java, son écosystème ainsi que sur l'aspect performance (64h par an).}
+    {
+    \vspace{-0.8\baselineskip}
+	\begin{itemize}[leftmargin=*]
+		\item Dispense de cours pour les étudiants de dernière année du cursus d'ingénieur.
+		\item Développement en Java, son écosystème ainsi que sur l'aspect performance (64h par an).
+	\end{itemize}
+	}
       \vspace{7pt}    
     \entry
-    {05/15 - 05/18}
+    {2015 - 2018}
     {Ingénieur étude et développement Java}
     {Worldline, Tours}
-    {Etude, développement et déploiement en production de la nouvelle version du Back-End de la solution de paiement sur internet SIPS sur une technologie Java avec une base de données Oracle. Mise  en place des nouveaux traitements pour assurer la sauvegarde et le traitement des transactions bancaires. Ecriture et optimisation de nouveaux modules pour absorber le traffic grandissant. Communication avec des services tiers via ActiveMQ et web services.\\ Participation active à la migration en production des clients sur cette nouvelle solution. Mise en place de surveillances spécifiques des modules via ELK.\\ Maintenance de la première version de la solution lors de la phase de transition. Les traitements étaient réalisés majoritairement en SQL (Sybase, MySQL) et C ainsi qu'un ensemble de scripts Shell et awk.\\Communication principalement en anglais (Benelux, Arménie et Inde).}
+    {
+    \vspace{-0.8\baselineskip}
+    \begin{itemize}[leftmargin=*]
+		\item Etude, développement et déploiement en production de la nouvelle version du Back-End de la solution de paiement sur internet SIPS.
+		\item Développement Java avec une base de données Oracle.
+		\item Mise  en place des nouveaux traitements pour assurer la sauvegarde et le traitement des transactions bancaires.
+		\item Ecriture et optimisation de nouveaux modules pour absorber le traffic grandissant.
+		\item Communication avec des services tiers via ActiveMQ et web services.
+		\item Participation active à la migration en production des clients sur cette nouvelle solution.
+		\item Mise en place de surveillances spécifiques des modules via ELK.
+		\item Maintenance de la première version de la solution lors de la phase de transition (Base de données Sybase \& MySQL, programme C, scripts Shell \& Awk).
+		\item Communication principalement en anglais (Benelux, Arménie et Inde).	
+	\end{itemize}
+}
       \vspace{7pt}      
     \entry
-    {09/13 - 09/15}
+    {2013 - 2015}
     {Etudiant-enseignant}
     {Polytech Tours}
-    {Cours personnalisés aux étudiants de première année de cycle d'ingénieur. Ils portaient sur l'algorithmique et les structures de données ainsi que l'implémentation de ceux-ci en langage C (2h par semaine).}
-      \vspace{7pt}      
-    \entry
-    {Etés 10/11/12}
-    {Agent administratif intérimaire}
-    {ANGDM, Lens}
-    {}
+    {
+    \vspace{-0.8\baselineskip}
+	\begin{itemize}[leftmargin=*]
+		\item Cours personnalisés aux étudiants de première année de cycle d'ingénieur. 
+		\item Algorithmique et les structures de données ainsi que l'implémentation en langage C (2h par semaine).
+	\end{itemize}
+    }
 \end{entrylist}
 
 \section{Formation}
@@ -175,7 +201,7 @@
 \section{Centres d'intérêts}
 \begin{entrylist}
   \entry
-    {Homelaber. Lecture (Fantasy \& mangas). Course à pieds}
+    {Homelaber - Lecture (Fantasy \& mangas) - Course à pieds \& Canicross}
     {}    {}    {}
 \end{entrylist}
 

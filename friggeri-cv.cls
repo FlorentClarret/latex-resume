@@ -109,7 +109,17 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \color{white}%
 }
 
-\newcommand{\header}[3]{%
+\newcommand{\header}[6]{%
+  
+  \begin{textblock}{7}(26.45,0.8)
+  \begin{flushright}
+    {\Large\headingfont\color{pblue} Adresse} \\
+    #4
+    #5
+    #6
+  \end{flushright}
+  \end{textblock}
+  
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
@@ -164,7 +174,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{-10pt}
+  \par\vspace{-12pt}
   {%
     \LARGE\headingfont\color{headercolor}%
     \@sectioncolor #1%
@@ -193,7 +203,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 }
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
-  #1&\parbox[t]{11.8cm}{%
+  #1&\parbox[t]{12.3cm}{%
     \textbf{#2}%
     \hfill%
     {\footnotesize\addfontfeature{Color=pblue} #3}\\%
@@ -206,14 +216,14 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 %%%%%%%%%%%%%%
 
 \RequirePackage[absolute,overlay]{textpos}
-\setlength{\TPHorizModule}{1cm}
+\setlength{\TPHorizModule}{0.6cm}
 \setlength{\TPVertModule}{1cm}
 \newenvironment{aside}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
-    \par\vspace{5pt}{\Large\headingfont\color{pblue} ##1}
+    \par\vspace{3pt}{\Large\headingfont\color{pblue} ##1}
   }
-  \begin{textblock}{3.6}(2.0, 0.55)
+  \begin{textblock}{7}(2.0, 0.55)
   \begin{flushright}
   \obeycr
 }{%
@@ -336,5 +346,5 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=0cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.7cm,top=2cm,right=1.5cm,bottom=0cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
