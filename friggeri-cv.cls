@@ -109,14 +109,14 @@ BoldItalicFont=texgyreheros-bolditalic.otf
   \color{white}%
 }
 
-\newcommand{\header}[6]{%
+\newcommand{\header}[7]{%
   
   \begin{textblock}{7}(26.45,0.8)
   \begin{flushright}
-    {\Large\headingfont\color{pblue} Adresse} \\
-    #4
-    #5
-    #6
+   #4 \\
+   #5 \\
+   #6 \\
+   #7
   \end{flushright}
   \end{textblock}
   
@@ -221,7 +221,7 @@ BoldItalicFont=texgyreheros-bolditalic.otf
 \newenvironment{aside}{%
   \let\oldsection\section
   \renewcommand{\section}[1]{
-    \par\vspace{3pt}{\Large\headingfont\color{pblue} ##1}
+    \par\vspace{13pt}{\Large\headingfont\color{pblue} ##1}
   }
   \begin{textblock}{7}(2.0, 0.55)
   \begin{flushright}
