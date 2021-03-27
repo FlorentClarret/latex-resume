@@ -54,12 +54,12 @@
 \begin{document}
 
 \header{Florent}
-				{Clarret} 
+				{ Clarret} 
 				{Ingénieur étude et développement}
 				{+33 (0)6 62 97 01 69}
-				{\href{mailto:florent.clarret@gmail.com}{\textbf{florent.clarret@}gmail.com} }
-				{\href{https://www.linkedin.com/in/florent-clarret/}{florent-clarret} \includegraphics{img/linkedin.png} }
-				{\href{https://github.com/FlorentClarret}{FlorentClarret} \includegraphics{img/github.png}}
+				{\href{mailto:florent.clarret@gmail.com}{\textbf{florent.clarret}@gmail.com} }
+				{\href{https://www.linkedin.com/in/florent-clarret/}{florent-clarret} \includegraphics{../img/linkedin.png}}
+				{\href{https://github.com/FlorentClarret}{FlorentClarret} \includegraphics{../img/github.png}}
 	
 % Fake text to add separator      
 \fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
@@ -69,7 +69,7 @@
 
 % In the aside, each new line forces a line break
 \begin{aside}
-  \includegraphics[scale=0.2]{img/photo.png} 
+  \includegraphics[scale=0.2]{../img/photo.png} 
     \section{Infos}
     Né le 01/04/1992
     Nationalité française
@@ -80,7 +80,7 @@
     ~
   \section{Développement}
     \smartdiagram[bubble diagram]{
-        \textbf{Dev backend},
+        \textbf{Backend},
         \textbf{Java},
         \textbf{Python},
         \textbf{Shell},
@@ -88,21 +88,19 @@
         \textbf{Spring}\\\textbf{Boot},
         \textbf{JPA},
         \textbf{Active}\\\textbf{MQ},
-        \textbf{Linux},
         \textbf{SGBD}
     }
     ~
   \section{Outillage}
     \smartdiagram[bubble diagram]{
         \textbf{Tools},
-        \textbf{Maven},
         \textbf{Gitlab},
+        \textbf{Github},
         \textbf{Docker},
         \textbf{CI/CD},
         \textbf{Git},
-        \textbf{Dynatrace},
-        \textbf{Jmeter},
-        \textbf{JMH}
+        \textbf{Linux},
+        \textbf{Ansible}
     }
     ~
    \section{Side projects}
@@ -121,24 +119,24 @@
   \entry
   {Depuis 2020}
     {Ingénieur logiciel}
-    {La compagnie des mobilités, Tours}
+    {La Compagnie des Mobilités, Tours}
     {
     \vspace{-0.8\baselineskip}
 	\begin{itemize}[leftmargin=*]
-		\item En charge du développement et de la maintenance du backend de l'application Geovelo.
-		\item Développement en Python et C++. Backend fonctionnant avec django et des bases de données PostgreSQL.
-		\item Applications déployées dans un cluster kubernetes.
-		\item Monitoring de l'application en production.
+		\item Lead backend de l'application mobile Android/iOS pour cyclistes Geovelo.
+		\item Développement en Python et C++. Backend en django avec des bases de données PostgreSQL.
+		\item Applications déployées sous docker dans un cluster kubernetes.
+		\item Mise en place de l'intégration continue, des tests unitaires, d'intégration, d'outils d'aide au développement et de qualité de code.
 	\end{itemize}
 	}
       \entry
     {Depuis 2019}
-    {Mentor Backend}
+    {Mentor Backend Python et Java}
     {OpenClassrooms, Travail à distance}
     {
     \vspace{-0.8\baselineskip}
 	\begin{itemize}[leftmargin=*]
-		\item Mentor indépendant sur les parcours Java et Python de la plateforme d'enseignement à distance OpenClassrooms.
+		\item Mentor indépendant sur les parcours backend Java et Python de la plateforme d'enseignement à distance OpenClassrooms.
 		\item Suivi personnalisé des étudiants lors de leurs formations.
 	\end{itemize}
 	}
@@ -151,7 +149,7 @@
 	\begin{itemize}[leftmargin=*]
 		\item Cours pour les étudiants de dernière année du cursus d'ingénieur.
 		\item Développement en Java, son écosystème ainsi que sur l'aspect performance.
-		\item Monitoring d'applications, mise en place de benchmarks, utilisation de JMeter, microbenchmarks JMH, étude et amélioration d'applications existantes.
+		\item Monitoring d'applications, mise en place de benchmarks, microbenchmarks JMH, étude et amélioration d'applications existantes, bonnes pratiques.
 	\end{itemize}
 	}
     \entry
@@ -161,12 +159,12 @@
     {
     \vspace{-0.8\baselineskip}
 	\begin{itemize}[leftmargin=*]
-		\item Refonte technique et évolution fonctionnelle du Back-End d'une solution d'authentificiation forte des personnes.
+		\item Refonte technique et évolution fonctionnelle du Backend de la solution d'authentification forte de Worldline.
 		\item Participation au choix des solutions techniques pour la mise en place de nouvelles fonctionnalités.
-		\item Optimisation des différents traitements existants.
+		\item Optimisation des différents traitements.
 		\item Mise en place de procédés cryptographiques pour les échanges client/serveur.
-		\item Dockerisation de l'application pour faciliter la mise en place des tests d'intégration.
-		\item Java avec Spring 3 déployée sur Tomcat. Migration vers Spring Boot 2. MySQL.
+		\item Dockerisation de l'application, mise en place de l'intégration continue, de l'outillage, des tests unitaires et d'intégration.
+		\item Initialement en Java avec Spring 3 déployée sur Tomcat avec une base de données MySQL. Migration vers Spring Boot 2.
 	\end{itemize}
 	}
       \entry
@@ -176,10 +174,10 @@
     {
     \vspace{-0.8\baselineskip}
     \begin{itemize}[leftmargin=*]
-		\item Etude, développement, optimisation et déploiement en production de la nouvelle version du Back-End de la solution de paiement sur internet SIPS.
-		\item Développement principalement Java, déployé en standalone ou sur des Tomcat ou JBoss,  avec une base de données Oracle.
-		\item Participation active à la migration en production des clients sur cette nouvelle solution et mise en place de surveillances.
-		\item Maintenance de la première version de la solution lors de la phase de transition (Base de données Sybase \& MySQL, programme C, scripts Shell \& Awk).
+		\item Analyse, développement, optimisation et déploiement en production de la nouvelle version du backend de la solution de paiement sur internet SIPS.
+		\item Développements majoritairement Java, déployés en standalone ou sur Tomcat ou JBoss,  avec une base de données Oracle.
+		\item Lead sur la migration en production des clients et mise en place des surveillances (environ 700 millions de paiements par an).
+		\item Maintenance de la première version de la solution (bases de données Sybase \& MySQL, procédures stockées SQL, programmes C, scripts Shell \& Awk).
 		\item Suivi et support aux équipes situées à l'étranger (Inde et Arménie).
 	\end{itemize}
 }
@@ -191,7 +189,7 @@
     \vspace{-0.8\baselineskip}
 	\begin{itemize}[leftmargin=*]
 		\item Cours personnalisés aux étudiants de première année de cycle d'ingénieur. 
-		\item Algorithmique, structures de données et implémentation en C.
+		\item Algorithmique, structures de données et implémentation en langage C.
 	\end{itemize}
     }
 \end{entrylist}
@@ -218,7 +216,7 @@
 \vspace{-5pt}
 \begin{entrylist}
   \entry
-    {Homelaber - Lecture (Fantasy \& mangas) - Course à pied \& Canicross}
+    {Homelaber - Lecture (Fantasy \& mangas) - Jeu vidéo - Course à pied}
     {}    {}    {}
 \end{entrylist}
 
