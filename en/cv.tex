@@ -1,0 +1,232 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+\usepackage{afterpage}
+\usepackage{hyperref}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{smartdiagram}
+\usepackage{fontspec}
+% if you want to add fontawesome package
+% you need to compile the tex file with LuaLaTeX
+% References:
+%   http://texdoc.net/texmf-dist/doc/latex/fontawesome/fontawesome.pdf
+%   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
+%\usepackage{fontawesome}
+\usepackage{metalogo}
+\usepackage{dtklogos}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usetikzlibrary{mindmap,shadows}
+\hypersetup{
+    pdftitle={Florent Clarret - CV},
+    pdfauthor={Florent Clarret},
+    pdfsubject={CV},
+    pdfkeywords={Clarret, resume, cv},
+    colorlinks=false,           % no lik border color
+    allbordercolors=white       % white border color for all
+}
+\smartdiagramset{
+    bubble center node font = \footnotesize,
+    bubble node font = \footnotesize,
+    % specifies the minimum size of the bubble center node
+    bubble center node size = 0.5cm,
+    %  specifies the minimum size of the bubbles
+    bubble node size = 0.5cm,
+    % specifies which is the distance among the bubble center node and the other bubbles
+    distance center/other bubbles = 0.3cm,
+    % sets the distance from the text to the border of the bubble center node
+    distance text center bubble = 0.5cm,
+    % set center bubble color
+    bubble center node color = pblue,
+    % define the list of colors usable in the diagram
+    set color list = {lightgray, materialcyan, orange, green, materialorange, materialteal, materialamber, materialindigo, materialgreen, materiallime},
+    % sets the opacity at which the bubbles are shown
+    bubble fill opacity = 0.6,
+    % sets the opacity at which the bubble text is shown
+    bubble text opacity = 0.5,
+}
+
+\addbibresource{bibliography.bib}
+\RequirePackage{xcolor}
+\definecolor{pblue}{HTML}{0395DE}
+
+\begin{document}
+
+\header{}
+				{Florent Clarret} 
+				{Software engineer}
+				{+33 (0)6 62 97 01 69}
+				{\href{mailto:florent.clarret@gmail.com}{\textbf{florent.clarret}@gmail.com} }
+				{\href{https://www.linkedin.com/in/florent-clarret/}{florent-clarret} \includegraphics{../img/linkedin.png}}
+				{\href{https://github.com/FlorentClarret}{FlorentClarret} \includegraphics{../img/github.png}}
+	
+% Fake text to add separator      
+\fcolorbox{white}{gray}{\parbox{\dimexpr\textwidth-2\fboxsep-2\fboxrule}{%
+.....
+}}
+
+
+% In the aside, each new line forces a line break
+\begin{aside}
+  \includegraphics[scale=0.2]{../img/photo.png} 
+    \section{Address}
+    10 rue des barattières
+    37130, Cinq-Mars-la-Pile
+    France
+    ~
+  \section{Languages}
+    French 
+    English 
+    ~
+  \section{Coding skills}
+    \smartdiagram[bubble diagram]{
+        \textbf{Code},
+        \textbf{Java},
+        \textbf{Python},
+        \textbf{Shell},
+        \textbf{Django},
+        \textbf{Spring}\\\textbf{Boot},
+        \textbf{JPA},
+        \textbf{C++},
+        \textbf{DBMS}
+    }
+    ~
+  \section{Tooling}
+    \smartdiagram[bubble diagram]{
+        \textbf{Tools},
+        \textbf{Gitlab},
+        \textbf{Github},
+        \textbf{Docker},
+        \textbf{CI/CD},
+        \textbf{Git},
+        \textbf{Linux},
+        \textbf{Ansible}
+    }
+    ~
+   \section{Side projects}
+    \textit{\#Homelab}
+    \textit{\#DIY}
+    \textit{\#AutomateBoringStuff}
+    ~
+    \section{Hobbies}
+    Walking
+    Reading
+    ~
+\end{aside}
+~
+
+\begin{center}
+Software engineer who has been working on backends for 6 years. Love automating tasks to make the processes faster and easier for me and my team. Always willing to learn new things, I also like to share my knowledge with others.
+\end{center}
+
+\vspace{15pt}
+
+\section{Experience}
+\vspace{-5pt}
+\begin{entrylist}
+  \entry
+  {Since 2020}
+    {Backend software engineer}
+    {Geovelo, Tours}
+    {
+    \vspace{-0.8\baselineskip}
+	\begin{itemize}[leftmargin=*]
+		\item Backend lead developer of the mobile application for cyclists Geovelo
+		\item Solution developed in Python with the django framework relying on multiple PostgreSQL databases
+		\item Occasionally working on the route planner in C++ when the team needs a hand
+		\item Application deployed in production using Docker in a Kubernetes cluster, monitored with prometheus and grafana
+		\item Continuous integration pipelines setup with Gitlab, added unit tests, automated repetitive tasks as much as possible. I also wrote a set of tools to make our development process smoother
+		\item Production monitoring and support. Intervention in case of problem, even outside the backend perimeter
+	\end{itemize}
+	}
+	
+	\vspace{4pt}
+      \entry
+    {Since 2019}
+    {Backend mentor}
+    {OpenClassrooms, Remote}
+    {
+    \vspace{-0.8\baselineskip}
+	\begin{itemize}[leftmargin=*]
+		\item Mentor on both java and python backend paths for the OpenClassrooms online teaching platform
+		\item Accompany students on their journey to become software developers
+	\end{itemize}
+	}
+	
+	\vspace{4pt}
+  \entry
+    {2017 - 2020}
+    {Teacher}
+    {Polytech Tours, Tours}
+    {
+    \vspace{-0.8\baselineskip}
+	\begin{itemize}[leftmargin=*]
+		\item Teacher at the Polytech Tours engineering school for 64h per years
+		\item Development in java focused on optimization, benchmarking, identifying bottlenecks, best practices, debugging and improving applications
+	\end{itemize}
+	}
+	
+	\vspace{4pt}
+    \entry
+    {2018 - 2020}
+    {Backend software engineer}
+    {Worldline, Tours}
+    {
+    \vspace{-0.8\baselineskip}
+	\begin{itemize}[leftmargin=*]
+		\item Maintained, developed and optimized a strong authentication solution backend
+		\item Developed in Java with Spring Boot and relying on MySQL databases
+		\item Dockerize the application for ease of testing. Set up the continuous integration pipelines with Gitlab and wrote  the complete tests suite
+		\item Production support, monitoring with splunk
+	\end{itemize}
+	}
+	\vspace{4pt}
+
+      \entry
+    {2015 - 2018}
+    {Backend software engineer}
+    {Worldline, Tours}
+    {
+    \vspace{-0.8\baselineskip}
+    \begin{itemize}[leftmargin=*]
+		\item Developed, optimized and deployed into production the new backend version for Worldline's payment service provider
+		\item Backend written in Java, deployed with JBoss or Tomcat and working with Oracle and MySQL databases
+		\item Lead on the platform migration in production and production support. Platform monitored with elasticsearch, logstash and kibana
+		\item Maintained the first version of the backend mostly written in C, Sybase SQL stored procedures, Awk and Shell scripts
+		\item Worked with international teams based in India and Armenia
+	\end{itemize}
+}
+
+	\vspace{4pt}
+    \entry
+    {2013 - 2015}
+    {Teacher}
+    {Polytech Tours, Tours}
+    {
+    \vspace{-0.8\baselineskip}
+	\begin{itemize}[leftmargin=*]
+		\item Customized courses for the first year students focused on algorithmic, data structure and on the C language
+	\end{itemize}
+    }
+\end{entrylist}
+
+\vspace{5pt}
+
+\section{Education}
+\vspace{-5pt}
+\begin{entrylist}
+  \vspace{-8pt}
+  \entry
+    {2012 - 2015}
+    {Engineering degree in computer science}
+    {Polytech Tours, Tours}
+    {}
+  \entry
+    {2010 - 2012}
+    {Diplôme universitaire de technologie in computer science}
+    {IUT, Lens}
+    {}
+\end{entrylist}
+
+\end{document}
